@@ -1,25 +1,44 @@
-
-*{
+* {
     font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
 
 }
+
 body {
     background-color: #1c0000;
     margin: 0;
     padding: 0;
     height: 100%;
+
 }
 
-.center{
+/* @keyframes anim{
+    0% {background-color: #1c0000;} 
+   25% {background-color: #120000;} 
+   50% {background-color: #380C0C;} 
+   75% {background-color: #120000;}  
+  100% {background-color: #1c0000;} 
+} 
+*/
+/* .window{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    animation-name: anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+} */
+
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-#nex{
+#nex {
     background-color: transparent;
     border-color: transparent;
 }
@@ -28,6 +47,7 @@ body {
     animation: rotate-vert-center 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
     width: 100px;
 }
+
 @keyframes rotate-vert-center {
     0% {
         -webkit-transform: rotateY(0);

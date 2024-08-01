@@ -6,9 +6,10 @@
 
 }
 body {
-    background-color: #1c0000;
+    background-color: #1c0000; 
     margin: 0;
     padding: 0;
+    
 }
 
 .navPri {
@@ -56,29 +57,28 @@ body {
     margin: 1em;
 }
 
-.bloque_git_init{
+.bloque_git_init {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #130504;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 10%;
     border: 2px solid #8f7851;
     width: 30%;
-
-
 }
 
-.titulo_git_init{
+.titulo_git_init {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #2e0d0a;
+    border-radius: 10% / 50%;
+
     width: 100%;
     height: 25%;
-    border-top-left-radius: 19px;
-    border-top-right-radius: 19px;
+    box-sizing: border-box;
 }
 .word_git{
     color: whitesmoke;
