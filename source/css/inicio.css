@@ -61,11 +61,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #130504;
+    background: #000;
     box-sizing: border-box;
     height: 200px;
     border-radius: 10%;
-    border: 2px solid #8f7851;
+    border: 2px solid #000;
     width: 30%;
 }
 
@@ -92,9 +92,9 @@ body {
 }
 
 .significado_git_init{
-    color: rgb(133, 133, 133);
+    color: rgb(217 175 175);
     font-family: 'Inconsolata', monospace;
-    padding: 10px;
+    padding: 0 15px 0 15px;
     height: 75%;
     display: flex;
     align-items: center;
