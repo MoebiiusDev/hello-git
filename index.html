@@ -4,14 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/source/img/iconoother.png" type="image/x-icon">
+    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
+    <script src="/source/JavaScript/code.js" defer></script>
     <link rel="stylesheet" href="/source/css/inicio.css">
+
     <title>Git - Retorno</title>
 </head>
 
 <body>
+    <video id="miVideo">
+        <source src="/source/img/atomic-explosion-meme-plantilla.mp4" type="video/mp4">
+    </video>
+    <audio class="finisher" src=""></audio>
+    <img id="zorua-finisher" src="/source/img/zorua-finisher.gif" alt="OHNO">
+    <div id="black-page"></div>
     <nav class="navPri">
         <ul>
-            <li><img src="/source/img/mosaico_leyli.png" alt="Leyli" class="leyli"></li>
+            <li><img src="/source/img/iconoother.png" alt="Leyli" class="leyli"></li>
             <li>Git</li>
             <li>GitHub</li>
         </ul>
@@ -190,9 +200,46 @@
                 <p class="word_init">push</p>
             </div>
             <div class="significado_git_init">
-                <p>Profe explica como el pico, push nos permite subir los cambios que teníamos en el area local al GitHub</p>
+                <p>Profe explica como el pico, push nos permite subir los cambios que teníamos en el area local al
+                    GitHub</p>
             </div>
         </div>
+    </div>
+    <div class="bloque_resumen">
+        <p>Para resumir todo esto, dejare las lineas de comandos que debes utilizar para crear tanto el repositorio,
+            subir los archivos al area local, hacer commits y finalmente push:</p>
+        <div class="bloque_black">
+            <div class="code_line vx">
+                <p>git</p>
+                <p class="code">init</p>
+            </div>
+            <div class="code_line">
+                <p>git</p>
+                <p class="code">branch -m main</p>
+            </div>
+            <div class="code_line">
+                <p>git</p>
+                <p class="code">add .</p>
+            </div>
+            <div class="code_line">
+                <p>git</p>
+                <p class="code">commit -m "Comentario o actualización"</p>
+            </div>
+            <div class="conection">
+                <p class="code">CONEXIÓN CON GITHUB</p>
+            </div>
+            <div class="code_line">
+                <p>git</p>
+                <p class="code">remote add origin https://github.com/Nombre_de_Usuario_GitHub/Nombre_de_repositorio.git
+                </p>
+            </div>
+            <div class="code_line vz">
+                <p>git</p>
+                <p class="code">push -u origin main</p>
+            </div>
+        </div>
+        <p>En el caso de conectar el repositorio con Github, al momento de crear un nuevo repositorio te sale en
+            pantalla los mismos comandos y mas simples, para no estar escribiéndolos manualmente.</p>
     </div>
 </body>
 

@@ -10,7 +10,6 @@
 
 <body>
     <audio class="nexmu" src=""></audio>
-    <!-- <div class="window"></div> -->
     <div class="center">
         <button id="nex">
             <img src="/source/img/mosaico_leyli.png" alt="Leyli" class="leyli">
@@ -20,14 +19,9 @@
         // Esto hace que el tema se reinicie al apretarse nuevamente, no se repite!
         let boton = document.querySelector("#nex");
         let audioEtiqueta = document.querySelector(".nexmu");
-        // let animacion = document.querySelector(".window")
-
         boton.addEventListener("click", () => {
             audioEtiqueta.setAttribute("src", "/source/music/twiddlefinger-instrumental.mp3");
             audioEtiqueta.play();
-            // animacion.style.display = "block"
-            // animacion.classList.add("anim");
-
         });
 
 
