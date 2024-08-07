@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #1f1919;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+.principal_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid #513c3c;
+
+}
+
+
+.ul_principal{
+    margin: 0;
+    padding: 0;
+    background: #1f1919;
+}
+.ul_principal li{
+    display: inline-block;
+    transform-style: preserve-3d;
+}
+
+.ul_principal li a{
+    color: #262626;
+    font-size: 16px;
+    font-family: monospace;
+    text-align: none;
+    display: block;
+}
+
+.ul_principal li a span{
+    display: block;
+    padding: 15px 20px;
+}
+
+.ul_principal li a span::before{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #886161;
+    color: #1f1919;
+    padding: 15px 20px;
+    transform-style: preserve-3d;
+    transition: .3s;
+    transform: rotateX(90deg) translateY(50px);
+    transform-origin: bottom;
+}
+
+.ul_principal li a span:hover::before{
+    transform:rotateX(0deg) translateY(0px);
+}
+
+.ul_principal li a span::after{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1f1919;
+    color: #886161;
+    padding: 15px 20px;
+    transform-style: preserve-3d;
+    transition: .3s;
+    transform: rotateX(0deg) translateY(0px);
+    transform-origin: top;
+}
+
+.ul_principal li a span:hover::after{
+    transform:rotateX(90deg) translateY(-10px);
+}
+
+.container_hello{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_hello p{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #886161;
+
+}
+.container_hello img{
+width: 100px;
+}
+
+
+.footer_primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.footer_primary{
+    color: white;
+    border-top: 2px solid #513c3c;
+    width: 100%;
+    font-family: monospace;
+    font-weight: 100;
+    font-style: normal;
+}
+.footer_primary ul {
+    width: 100%;
+    display: flex;
+}
+.footer_primary ul li {
+    background-color: #130f0f;
+    color: #886161;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+.footer_primary ul li ion-icon{
+    width: 20px;
+    height: 15px;
+    background-color: #ef4f4f;
+}
+.footer_primary ul li iconify-icon{
+    width: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px !important;
+}
+
+.gitl{
+    background-color: #fff;
+}
+.htmll{
+    background-color: #f06529 !important;
+    color: #fff;
+}
+.cssl{
+    background-color: #264de4 !important;
+    color: #fff;
+}
+.jsl{
+    background-color: #f0db4f !important;
+    color: #323330;
+}
+.mysqll{
+    background-color: #00758F;
+}
+
+.bootstrapl{
+    background-color: #563d7c;
+}
+
+.sassl{
+    background-color: #cc6699 !important;
+    color: #fff;
+}
+
+.tailwindl{
+    background-color: #0f172abf;
+    color: #06b6d4 !important;
+}
+
+.figmal{
+background-color: #181818;
+}
+.vuel{
+    background-color: #41B883 !important;
+    color: #34495E;
+}
+.reactl{
+    background-color: #1c2c4c !important;
+    color: #61DBFB;
+}
+#f06529
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nex {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.leyli {
+    animation: rotate-vert-center 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+    width: 100px;
+}
+
+@keyframes rotate-vert-center {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+

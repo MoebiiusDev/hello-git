@@ -33,6 +33,12 @@ body {
     color: #e8c382;
 }
 
+.navPri ul li a{
+text-decoration: none;
+color: #e8c382;
+
+}
+
 .leyli {
     animation: rotate-vert-center 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
     width: 50px;

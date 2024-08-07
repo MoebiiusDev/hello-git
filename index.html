@@ -4,243 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/source/img/iconoother.png" type="image/x-icon">
-    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
-    <script src="/source/JavaScript/code.js" defer></script>
-    <link rel="stylesheet" href="/source/css/inicio.css">
+    <link rel="stylesheet" href="/source/css/index_design.css">
 
-    <title>Git - Retorno</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="/source/JavaScript/index_code.js" defer></script>
+    <title>MoebiiusDev</title>
 </head>
 
 <body>
-    <video id="miVideo">
-        <source src="/source/img/atomic-explosion-meme-plantilla.mp4" type="video/mp4">
-    </video>
-    <audio class="finisher" src=""></audio>
-    <img id="zorua-finisher" src="/source/img/zorua-finisher.gif" alt="OHNO">
-    <div id="black-page"></div>
-    <nav class="navPri">
-        <ul>
-            <li><img src="/source/img/iconoother.png" alt="Leyli" class="leyli"></li>
-            <li>Git</li>
-            <li>GitHub</li>
+    <audio class="nexmu" src=""></audio>
+    <div class="principal_container">
+        <div class="center">
+            <button id="nex">
+                <img src="/source/img/mosaico_leyli.png" alt="Leyli" class="leyli">
+            </button>
+        </div>
+    </div>
+    <nav class="nav_principal">
+        <ul class="ul_principal">
+            <li><a href="#"><span title="Fotos del admin">Fotos del admin</span></a></li>
+            <li><a href="/source/html/git_page.html"><span title="git Basic">git Basic</span></a></li>
+
         </ul>
     </nav>
-    <div class="principal">
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">init</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Se crea el repositorio desde 0, en teoría es el primer comando que se debería de hacer.</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">branch -m main</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Renombra la rama principal, ya que esta se llamaba master pero por cosas de la vida ahora tiene otro
-                    nombre.</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">status</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Muestra el estado actual de la rama, si es que se han subido archivos o no se han realizado commits.
-                </p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">add .</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Añade todos los archivos a la rama, cabe recalcar que esto puede hacerse por separado.</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">commit -m ""</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Nos permite agregar una copia de nuestro archivo que estaba en el area local.</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">log --graph</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Nos muestra en consola en forma de rama todos los cambios que se han realizado.</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">checkout</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Nos permite viajar en todos los commits que ya hayamos realizados, podrías básicamente volver al
-                    inicio del todo., se pueden ver los commit usando el "git log".</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">diff</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Nos permite ver los cambios de manera mas gráfica antes de hacer commit</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">tag</p>
-            </div>
-            <div class="significado_git_init">
-                <p>En vez de identificar un commit por letra y números, con el tag podemos asignarle un nombre en
-                    concreto. (git tag nombre_cualquiera)</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">branch</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Crea una nueva rama. (git branch nombre)</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">branch -d</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Borra la rama.</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">switch</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Accedes a las nueva ramas o a la que elijas (git switch nombre)</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">merge</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Combinas los campos de las ramas. (Se va a la otra rama creada, por ejemplo "login", y haz el
-                    siguiente comando: git merge main). Traerás todos los datos de la rama main a la rama login.</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">stash</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Es como generar un commit pero temporal. (git stash list es para ver todos los stash temporales)</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">pull</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Se descarga el historial y los cambios, para descargar cambios que se hayan hecho en el propio GitHub
-                    se debe de poner los siguentes comandos, no preguntes, solo gozalo: git config pull.rebase false |
-                    git pull origin main</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">fetch</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Se descarga el historial de los cambios</p>
-            </div>
-        </div>
-        <!--  -->
-        <div class="bloque_git_init">
-            <div class="titulo_git_init">
-                <p class="word_git">git</p>
-                <p class="word_init">push</p>
-            </div>
-            <div class="significado_git_init">
-                <p>Profe explica como el pico, push nos permite subir los cambios que teníamos en el area local al
-                    GitHub</p>
-            </div>
-        </div>
+    <div class="container_hello">
+        <p>Hola! Como llegaste aqui?</p>
+        <img src="/source/img/como.png" alt="">
     </div>
-    <div class="bloque_resumen">
-        <p>Para resumir todo esto, dejare las lineas de comandos que debes utilizar para crear tanto el repositorio,
-            subir los archivos al area local, hacer commits y finalmente push:</p>
-        <div class="bloque_black">
-            <div class="code_line vx">
-                <p>git</p>
-                <p class="code">init</p>
-            </div>
-            <div class="code_line">
-                <p>git</p>
-                <p class="code">branch -m main</p>
-            </div>
-            <div class="code_line">
-                <p>git</p>
-                <p class="code">add .</p>
-            </div>
-            <div class="code_line">
-                <p>git</p>
-                <p class="code">commit -m "Comentario o actualización"</p>
-            </div>
-            <div class="conection">
-                <p class="code">CONEXIÓN CON GITHUB</p>
-            </div>
-            <div class="code_line">
-                <p>git</p>
-                <p class="code">remote add origin https://github.com/Nombre_de_Usuario_GitHub/Nombre_de_repositorio.git
-                </p>
-            </div>
-            <div class="code_line vz">
-                <p>git</p>
-                <p class="code">push -u origin main</p>
-            </div>
-        </div>
-        <p>En el caso de conectar el repositorio con Github, al momento de crear un nuevo repositorio te sale en
-            pantalla los mismos comandos y mas simples, para no estar escribiéndolos manualmente.</p>
-    </div>
+    <footer class="footer_primary">
+        <ul>
+            <li><iconify-icon class="gitl" icon="bi:git"  style="color: #f34f29"></iconify-icon>git</li>
+            <li><ion-icon class="htmll" name="logo-html5"></ion-icon>HTML</li>
+            <li><ion-icon  class="cssl" name="logo-css3"></ion-icon>CSS</li>
+            <li><ion-icon class="jsl" name="logo-javascript"></ion-icon>JavaScript</li>
+            <li><iconify-icon class="mysqll" icon="fontisto:mysql"  style="color: #fff"></iconify-icon>MySQL</li>
+            <li><ion-icon class="sassl" name="logo-sass"></ion-icon>Sass</li>
+            <li><iconify-icon class="bootstrapl" icon="ri:bootstrap-fill"  style="color: #fff"></iconify-icon>Bootstrap</li>
+            <li><iconify-icon class="tailwindl" icon="mdi:tailwind"  style="color: #fff"></iconify-icon>Tailwind</li>
+            <li><iconify-icon class="figmal" icon="logos:figma"></iconify-icon>Figma</li>
+            <li><ion-icon class="vuel" name="logo-vue"></ion-icon>Vue</li>
+            <li><ion-icon class="reactl" name="logo-react"></ion-icon>React</li>
+
+        </ul>
+    </footer>
 </body>
 
 </html>
