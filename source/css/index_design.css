@@ -17,15 +17,18 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    position: relative;
+    overflow: hidden;
 
 }
 
 .tinkycream {
     width: 100vw;
+    top: 400px;
     height: 100vh;
     position: absolute;
     z-index: 99999;
-    animation: scale-up-center 0.1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.05s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     display: none;
 }
 
@@ -117,6 +120,7 @@ body {
     font-family: "Amatic SC", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 10px;
     color: #d9bdbd;
     text-decoration: none;
     font-size: 16px;
@@ -187,7 +191,7 @@ body {
 
 .footer_div {
     display: flex;
-    bottom: 0;
+    top: 520px;
     width: 100%;
     position: absolute;
 }
