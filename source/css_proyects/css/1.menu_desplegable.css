@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #1f1919;
+    background-color: #231d1d;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -34,7 +34,7 @@ body {
 }
 
 .nav_basic {
-    background-color: black;
+    background-color: #202124;
     color: white;
     width: 100%;
     top: 0;
@@ -58,7 +58,7 @@ body {
 
 .nav_basic .mobile .header .more button {
     border: none;
-    background-color: black;
+    background-color: #202124;
     color: white;
     padding: 15px;
     cursor: pointer;
@@ -66,7 +66,12 @@ body {
 
 .nav_basic .logo {
     min-width: 250px;
-    /*Al menos esa capa va a medir 250px*/
+
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 4;
+
 }
 
 .nav_basic a {
@@ -74,11 +79,17 @@ body {
     text-decoration: none;
     display: block;
     padding: 20px 25px;
+    font-family: "Dosis", sans-serif;
+    transition: 0.3s;
 }
 
 .nav_basic a:hover {
-    color: black;
-    background-color: #00c3ff;
+    color: #b84242;
+    border-bottom: .5px solid #654343;
+    box-sizing: border-box;
+    height: 60px;
+
+
 }
 
 .nav_basic .desktop {
@@ -91,6 +102,15 @@ body {
 
 .nav_basic .desktop .logo {
     padding: 15px;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
+    z-index: 4;
+}
+
+.nav_basic .desktop .logo:hover {
+    color: #b84242;
 }
 
 
@@ -117,7 +137,7 @@ body {
     }
 
     .nav_basic .secondary.mini .submenu {
-        background-color: black;
+        background-color: #202124;
         display: none;
         position: absolute;
         width: 200px;
@@ -141,6 +161,24 @@ body {
 }
 
 
+.nevada_effect {
+    display: none;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    animation: fade-in 120s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
 
@@ -148,13 +186,12 @@ body {
 
 .navPri {
     display: flex;
-    flex-wrap: wrap;
     position: absolute;
-    background: #1f1919;
+    background-color: #231d1d;
+
     border-top: 1px solid #654343;
     width: 100%;
-    height: 75px;
-    bottom: 0;
+    top: 485px;
 
 }
 
@@ -162,18 +199,39 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 0;
 }
 
 .navPri .ul_desktop li {
-    margin: 10px;
+    padding: 10px;
     list-style: none;
-    color: #e8c382;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, .87);
+    height: 100%;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: 0.3s;
 }
 
 .navPri .ul_desktop li a {
     text-decoration: none;
-    color: #e8c382;
+    color: rgba(255, 255, 255, .87);
+
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navPri .ul_desktop li .inicio_button{
+    z-index: 4;
+}
+
+.navPri .ul_desktop li:hover {
+    /* background-color: #312120; */
+    color: #b84242;
 
 }
 
@@ -188,7 +246,7 @@ body {
     display: none;
     border: none;
     background-color: #1f1919;
-    color: #e8c382;
+    color: #d9bdbd;
     width: 130px;
     padding: 15px;
     cursor: pointer;
@@ -204,7 +262,11 @@ body {
     width: 100%;
     flex-direction: column;
     position: absolute;
-    bottom: 75px;
+    bottom: 59px;
+}
+
+.navPri .subdiv .inicio_button{
+    z-index: 4;
 }
 
 .navPri .subdiv a {
@@ -215,12 +277,16 @@ body {
     justify-content: flex-start;
     background-color: #1f1919;
 
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
     text-decoration: none;
-    color: #e8c382;
+    color: rgba(255, 255, 255, .87);
 }
 
 .navPri .subdiv a:hover {
-    background-color: #312120;
+    background-color: #332632;
 
 
 }
@@ -240,7 +306,7 @@ body {
     }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 380px) {
     .navPri .ul_desktop {
         display: none;
     }
@@ -377,13 +443,4 @@ body {
         transform: translateX(-1000px);
         /* opacity: 1; */
     }
-}
-
-.stop_circle{
-    top: 250px;
-    position: absolute;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    color: #e8c382;
 }
