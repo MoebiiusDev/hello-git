@@ -1,0 +1,454 @@
+@font-face {
+    font-family: 'DETERMINATION';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/225473/DTM-Mono.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    padding: 100px;
+}
+
+.cards .card {
+    background-color: #202124;
+    color: wheat;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    /* Esto permite poner las tarjetas encima de la otra*/
+    display: flex;
+    flex-direction: column;
+    transition: all .2s ease;
+
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2), -4px 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.cards .card:hover {
+    margin-right: 80px;
+    transform: rotate(3deg) translateY(-15px);
+}
+
+.cards .card a {
+    color: #9e482e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cards .card a:hover {
+    color: lightblue;
+}
+
+.cards .card .header {
+    flex: 1;
+}
+
+.cards .card .header .date {
+    padding: 10px 0;
+}
+
+.cards .card .header .title {
+    /* font-family: 'DETERMINATION'; */
+    font-size: 20px;
+}
+
+.cards .card .header .title img {
+    width: 80%;
+}
+
+.cards .card .footer .autor a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.cards .card .footer img {
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid #9e482e;
+}
+
+.cards .card[class*="element"] {
+    margin-left: -100px;
+}
+
+.element_1:hover,
+.element_2:hover {
+    margin-left: -130px;
+}
+
+
+
+.easter {
+    position: absolute;
+    background-color: #231d1d;
+    border: none;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+
+.bkBlack {
+    background-color: black;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 1001;
+}
+
+.divwhite {
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 1002;
+    display: none;
+
+}
+
+.divwhite2 {
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 1002;
+    display: none;
+    animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+
+}
+
+@keyframes puff-out-center {
+    0% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        opacity: 0;
+    }
+}
+
+
+
+
+
+.container_asgore {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    /* position: absolute; */
+}
+
+.asgoref {
+    width: 58vw;
+    z-index: 1003;
+    user-select: none;
+
+}
+
+.container_asgore2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container_asgore2 .asgoreb {
+    /* width: 50vw; */
+    z-index: 1003;
+    user-select: none;
+    position: absolute;
+    top: 70px;
+
+}
+
+.chat {
+    display: none;
+    width: 575px;
+    top: 300px;
+    right: 350px;
+    height: 140px;
+    position: absolute;
+    border: 5px solid #FFFFFF;
+    background-color: #000000;
+    z-index: 1004;
+    color: #FFFFFF;
+    font-family: "DETERMINATION";
+    font-size: 20pt;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.ul_asg{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 480px;
+    left: 310px;
+    z-index: 1004;
+    display: none;
+    text-align: center;
+
+}
+
+.li_asg{
+    background: #000;
+    color: #ff7f27;
+    border: 2px solid #ff7f27;
+    padding: 5px;
+    width: 135px;
+    text-align: right;
+    font-size: 33px;
+    margin-right: 40px;
+    font-family: "DETERMINATION";
+    background: url(https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626867/fight_qmeuhy.png) #000;
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    background-size: 23px;
+    cursor: pointer;
+}
+
+.li_asg.actasg{
+    background: url(https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626867/act_mzziin.png) #000;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    background-size: 23px;
+}
+
+.li_asg.itemasg{
+    background: url(https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626868/item_p6y2ix.png) #000;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    background-size: 23px;
+}
+
+.li_asg.mercyasg{
+    background: url(https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626869/mercy_nzbv67.png) #000;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    background-size: 23px;
+}
+
+.li_asg:hover{
+    color: #ff0;
+    border: 2px solid #ff0;
+    background: url(https://res.cloudinary.com/daniel-griffiths/image/upload/v1473626867/heart_lpr6lv.png) #000;
+    background-repeat: no-repeat;
+    background-position: 7px center;
+}
+
+
+.bottom_animation {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    z-index: 1002;
+    display: none;
+}
+
+.layer-1 {
+    background-color: #1e001e;
+    height: 49px;
+    border-bottom: 1px solid #3b003b;
+    animation: scale-down-1 4s infinite;
+}
+
+.layer-2 {
+    background-color: #260026;
+    height: 42px;
+    border-bottom: 1px solid #460046;
+    animation: scale-down-2 4s infinite;
+}
+
+.layer-3 {
+    background-color: #2e002e;
+    height: 37px;
+    border-bottom: 1px solid #510051;
+    animation: scale-down-3 4s infinite;
+}
+
+.layer-4 {
+    background-color: #360036;
+    height: 32px;
+    border-bottom: 1px solid #5a005a;
+    animation: scale-down-4 4s infinite;
+}
+
+.layer-5 {
+    background-color: #3e003e;
+    height: 27px;
+    border-bottom: 1px solid #620062;
+    animation: scale-down-5 4s infinite;
+}
+
+.layer-6 {
+    background-color: #460046;
+    height: 22px;
+    border-bottom: 1px solid #690069;
+    animation: scale-down-6 4s infinite;
+}
+
+.layer-7 {
+    background-color: #4e004e;
+    height: 18px;
+    border-bottom: 1px solid #700070;
+    animation: scale-down-7 4s infinite;
+}
+
+.layer-8 {
+    background-color: #560056;
+    height: 12px;
+    border-bottom: 1px solid #750075;
+    animation: scale-down-8 4s infinite;
+}
+
+.layer-9 {
+    background-color: #5e005e;
+    height: 8px;
+    border-bottom: 1px solid #790079;
+    animation: scale-down-9 4s infinite;
+}
+
+@keyframes scale-down-1 {
+    0% {
+        height: 49px
+    }
+
+    50% {
+        height: 8px
+    }
+
+    100% {
+        height: 49px
+    }
+}
+
+@keyframes scale-down-2 {
+    0% {
+        height: 42px
+    }
+
+    50% {
+        height: 8px
+    }
+
+    100% {
+        height: 42px
+    }
+}
+
+@keyframes scale-down-3 {
+    0% {
+        height: 37px
+    }
+
+    50% {
+        height: 8px
+    }
+
+    100% {
+        height: 37px
+    }
+}
+
+@keyframes scale-down-4 {
+    0% {
+        height: 32px
+    }
+
+    50% {
+        height: 8px
+    }
+
+    100% {
+        height: 32px
+    }
+}
+
+@keyframes scale-down-5 {
+    0% {
+        height: 27px
+    }
+
+    50% {
+        height: 8px
+    }
+
+    100% {
+        height: 27px
+    }
+}
+
+@keyframes scale-down-6 {
+    0% {
+        height: 22px
+    }
+
+    50% {
+        height: 8px
+    }
+
+    100% {
+        height: 22px
+    }
+}
+
+@keyframes scale-down-7 {
+    0% {
+        height: 18px
+    }
+
+    50% {
+        height: 8px
+    }
+
+    100% {
+        height: 18px
+    }
+}
+
+@keyframes scale-down-8 {
+    0% {
+        height: 12px
+    }
+
+    50% {
+        height: 8px
+    }
+
+    100% {
+        height: 12px
+    }
+}
+
+@keyframes scale-down-9 {
+    0% {
+        height: 8px
+    }
+
+    50% {
+        height: 4px
+    }
+
+    100% {
+        height: 8px
+    }
+}

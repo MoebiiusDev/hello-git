@@ -47,7 +47,6 @@ logo.forEach((elemento2) => {
             document.body.style.filter = "grayscale(100%)";
             document.body.style.transition = "all 2s";
 
-
             if (!lamentosoPlay) {
                 lamentosoPlay = true;
             }
@@ -56,18 +55,22 @@ logo.forEach((elemento2) => {
                 lamentoso.volume = currentVolume;
                 lamentoso.play();
             }
-        }, 5000);
-        setTimeout(function nevadaF() {
-            nevada_effect.style.display = 'flex';
 
-        }, 20000);
+            // La siguiente función se ejecutará después de 5 segundos
+            setTimeout(() => {
+                nevada_effect.style.display = 'flex';
+            }, 20000);
+        }, 5000);
+
+        elemento2.addEventListener("mouseout", () => {
+            // Cancela el temporizador si el mouse sale del elemento antes de los 2 segundos
+            clearTimeout(timeoutId);
+            currentVolume = 0.2;
+            lamentoso.volume = currentVolume;
+        });
     });
-    elemento2.addEventListener("mouseout", () => {
-        // Cancela el temporizador si el mouse sale del elemento antes de los 2 segundos
-        clearTimeout(timeoutId);
-        currentVolume = 0.2;
-        lamentoso.volume = currentVolume;
-    })});
+});
+
 
 
 
