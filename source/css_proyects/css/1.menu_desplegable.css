@@ -6,6 +6,7 @@
     font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
 }
 
 html {
@@ -164,6 +165,8 @@ body {
 .nevada_effect {
     display: none;
     position: relative;
+    background-image: url(/source/img/nevada.gif);
+    background-repeat: repeat;
     width: 100vw;
     height: 100vh;
     z-index: 1;

@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/source/css/css_page.css">
+    <link rel="stylesheet" href="/source/css/nav_bottom.css">
+
+    <!-- Letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -14,14 +18,6 @@
 </head>
 
 <body>
-    <nav class="navPri">
-        <ul>
-            <li><img src="/source/img/iconoother.png" alt="Leyli" class="leyli"></li>
-            <li><a href="/index.html">Inicio</a></li>
-            <li>Css</li>
-            <li>Css Advanced</li>
-        </ul>
-    </nav>
     <div class="father_container">
         <div class="cartel">
             <div class="title">
@@ -39,7 +35,67 @@
                 <p>Pues no se me ocurre en donde podríamos poner estas tarjetas...</p>
             </div>
         </div>
+        <div class="cartel">
+            <div class="title">
+                <a href="/source/css_proyects/html/3.tabla_de_datos.html">Tabla de datos - Basic</a>
+            </div>
+            <div class="title_description">
+                <p>Pues es una tabla común y corriente</p>
+            </div>
+        </div>
+        <div class="cartel">
+            <div class="title">
+                <a href="/source/css_proyects/html/4.formulario.html">Formulario - Basic</a>
+            </div>
+            <div class="title_description">
+                <p>Un formulario!, wow que emocionante.</p>
+            </div>
+        </div>
     </div>
+
+    <nav class="nav_primary_bottom">
+        <ul class="ul_desktop">
+            <li><img src="/source/img/moebiiusLogoPink.png" alt="Leyli" class="icon_logo"></li>
+            <li><a class="inicio_button" href="/index.html">Inicio</a></li>
+            <li><a href="/source/html/css_page.html">Css</a></li>
+            <li>Css advanced</li>
+        </ul>
+        <ul class="ul_language">
+            <li>
+                <div class="div_html">
+                    <iconify-icon icon="material-symbols:html" width="30" height="30"
+                        style="color: #fff"></iconify-icon>
+                </div>
+            </li>
+            <li>
+                <div class="div_css">
+                    <iconify-icon icon="material-symbols:css" width="30" height="30"
+                        style="color: #fff"></iconify-icon>
+                </div>
+            </li>
+            <li>
+                <div class="div_js">
+                    <iconify-icon icon="cib:js" width="30" height="30" style="color: #fff"></iconify-icon>
+                </div>
+            </li>
+            <li>
+                <div class="div_sass">
+                    <iconify-icon icon="akar-icons:sass-fill" width="30" height="30"
+                        style="color: #fff"></iconify-icon>
+                </div>
+            </li>
+        </ul>
+        <button class="button_movile">
+            <span class="material-symbols-outlined button_click">
+                lunch_dining
+            </span>
+        </button>
+        <div class="sub_nav">
+            <a class="inicio_button" href="/index.html">Inicio</a>
+            <a href="/source/html/css_page.html">Css</a>
+            <a href="#">Css advanced</a>
+        </div>
+    </nav>
 </body>
 
 </html>

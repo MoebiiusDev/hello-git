@@ -67,8 +67,14 @@ color: #e8c382;
     }
 }
 
+.father_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .cartel{
     display: flex;
+    flex: 1 1 20%;
     flex-direction: column;
     border: 1px solid #654343;
     margin: 10px;
@@ -79,7 +85,7 @@ color: #e8c382;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #654343;
-    background: #312120;
+    background: #121212;
 
 }
 .title a{
@@ -88,17 +94,27 @@ color: #e8c382;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #d9bdbd;
+    color: #fff;
+
+    transition: .2s;
+}
+.title a:hover{
+    color: #b84242;
+
 }
 
 .title_description{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: #121212;
+    /* justify-content: center; */
+    background: #121212; 
+    padding: 10px;
+    height: 100%;
 }
 
 .title_description p{
     color: #8e8d8a;
+    font-family: "Dosis", sans-serif;
+
 
 }

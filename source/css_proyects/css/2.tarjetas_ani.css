@@ -45,6 +45,7 @@
 }
 
 .cards .card .header {
+    font-family: "Dosis", sans-serif;
     flex: 1;
 }
 
@@ -64,6 +65,8 @@
 .cards .card .footer .autor a {
     display: flex;
     align-items: center;
+    font-family: "Dosis", sans-serif;
+transition: .2s;
     gap: 10px;
 
 }

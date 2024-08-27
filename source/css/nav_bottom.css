@@ -3,9 +3,9 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Inconsolata', monospace;
     margin: 0;
     padding: 0;
+    /* font-family: 'Inconsolata', monospace; */
 }
 
 body {
@@ -32,7 +32,7 @@ body {
     display: flex;
     position: absolute;
     background-color: #231d1d;
-
+    justify-content: space-between;
     border-top: 1px solid #654343;
     width: 100%;
     top: 485px;
@@ -45,6 +45,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0;
+    cursor: default;
 }
 
 .nav_primary_bottom .ul_desktop li {
@@ -67,9 +68,15 @@ body {
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    transition: 0.3s;
+
 }
 
-.nav_primary_bottom .ul_desktop li .inicio_button{
+.nav_primary_bottom .ul_desktop li a:hover {
+    color: #b84242;
+}
+
+.nav_primary_bottom .ul_desktop li .inicio_button {
     z-index: 4;
 }
 
@@ -78,6 +85,19 @@ body {
     color: #b84242;
 
 }
+
+.nav_primary_bottom .ul_language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.nav_primary_bottom .ul_language li {
+    list-style: none;
+}
+
 
 .icon_logo {
     animation: rotate-vert-center 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
@@ -109,7 +129,7 @@ body {
     bottom: 59px;
 }
 
-.nav_primary_bottom .sub_nav .inicio_button{
+.nav_primary_bottom .sub_nav .inicio_button {
     z-index: 4;
 }
 
@@ -134,7 +154,6 @@ body {
 
 
 }
-
 
 
 
@@ -255,3 +274,59 @@ body {
     }
 
 }
+
+iconify-icon {
+    transition: .2s;
+}
+
+iconify-icon:hover {
+    color: #b84242 !important;
+
+}
+
+.div_sass:hover,
+.div_js:hover,
+.div_css:hover,
+.div_html:hover {
+    animation: heartbeat 1.5s ease-in-out both;
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+

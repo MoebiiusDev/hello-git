@@ -1,0 +1,156 @@
+:root{
+    --color-nav: #202124;
+    --color-letra-nav: rgba(255, 255, 255, .87);
+    --color-letra-nav-hover: #b84242;
+}
+
+.nav_primary_bottom {
+    position: static !important;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+
+.form-container{
+    font-family: "Dosis", sans-serif;
+    margin-top: 50px;
+    background: var(--color-nav);
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.form-container .login-container{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-container .login-container > h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-letra-nav);
+}
+.form-container .login-container > p,
+.form-container .login-container > span{
+    text-align: center;
+    color: #555;
+}
+
+.form-container .login-container label{
+    color: var(--color-letra-nav-hover);
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+
+}
+
+.form-container .login-container input.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #7a7a7a;
+    color: var(--color-letra-nav);
+    background-color: var(--color-nav);
+    border-radius: 5px;
+}
+
+.form-container .login-container input.input:focus{
+    outline: 1.5px solid var(--color-letra-nav-hover);
+}
+
+.form-container .login-container .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0;
+
+}
+
+.form-container .login-container .options div{
+    color: var(--color-letra-nav);
+    gap: 10px;
+
+}
+
+
+.form-container .login-container .options a{
+    color: #555;
+    text-decoration: none;
+    transition: .2s;
+
+}
+
+.form-container .login-container .options a:hover{
+    color: var(--color-letra-nav-hover);
+}
+
+
+.form-container .login-container .providers{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn.btn-login{
+    background-color: #555;
+    color: var(--color-letra-nav);
+    transition: .2s;
+}
+
+.btn.btn-login:hover{
+    background-color: #3a3a3a;
+}
+
+
+.btn.btn-google{
+    background: #1e3d70;
+    color: var(--color-letra-nav);
+
+}
+
+.btn.btn-reddit{
+    background-color: #83340d ;
+    color: var(--color-letra-nav);
+}
+
+.btn.btn-x{
+    background-color: #000;
+    color: var(--color-letra-nav);
+}
+
+.form-container .welcome-screen-container{
+    background-color: var(--color-letra-nav-hover);
+    height: 100%;
+    width: 40%;
+}
+
+input#rememberme {
+    top: 2.5px;
+    position: relative;
+}
